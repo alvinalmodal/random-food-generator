@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "primereact/resources/themes/saga-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+import "./App.css";
+import Navigation from "./components/navigation";
+import Food from "./components/food";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App p-d-flex">
+      <Navigation></Navigation>
+      <Food></Food>
     </div>
   );
 }
